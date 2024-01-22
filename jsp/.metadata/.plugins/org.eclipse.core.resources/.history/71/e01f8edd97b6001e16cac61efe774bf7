@@ -1,0 +1,38 @@
+<%@page import="java.io.IOException"%>
+<%@page import="java.io.FileNotFoundException"%>
+<%@page import="java.io.FileReader"%>
+<%@page import="java.io.BufferedReader"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<% 
+request.setCharacterEncoding("utf-8");
+String name = request.getParameter("name");
+String check = request.getParameter("check");
+String color=request.getParameter("color");
+
+
+request.setAttribute("Name", name);
+request.setAttribute("Size", check);
+request.setAttribute("Color", color);
+
+
+
+RequestDispatcher dispatcher =  request.getRequestDispatcher("cart_05.jsp");
+dispatcher.forward(request, response);
+
+
+
+%>
+ 		수량 : <%= request.getAttribute("Name") %><br>
+        크기 : <%= request.getAttribute("Size") %><br>
+        색상 : <%= request.getAttribute("Color") %><br>
+
+</body>
+</html>

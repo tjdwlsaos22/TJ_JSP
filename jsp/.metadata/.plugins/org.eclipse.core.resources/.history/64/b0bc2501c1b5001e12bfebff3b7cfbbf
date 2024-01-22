@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+</head>
+<body>
+	<form action="Num2.jsp" method="get">
+		num1 :
+			<input type="text" name="num1" size=10 ><br>
+		num2 :
+			<input type="text" name="num2" size=10 ><br>
+		계산방법 :<br>
+			<input type="radio" name="check" value="add" checked="checked">덧셈<br>
+			<input type="radio" name="check" value="minus">뺄셈<br>
+			<input type="radio" name="check" value="mul">곱셈<br>
+			<input type="radio" name="check" value="div">나눗셈<br>
+			
+			<input type="submit" value="계산">
+			
+			<select name="numbers" id="numbers">
+            <% for (int i = 1; i <= 100; i++) { %>
+                <option value="<%= i %>"><%= i %></option>
+            <% } %>	
+			</select>
+			
+
+</body>
+</html>

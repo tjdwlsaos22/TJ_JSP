@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Addition</title>
+</head>
+<body>
+<% 
+	int a=30;
+	int b=20;
+	int addition=a+b;
+	int m = a-b;
+	int n = a*b;
+	int c = a/b;
+	int d= a%b;
+%>
+<!--위의 식은 안보이고, 아래 출력값만 출력된다.  -->
+<%=a %> + <%=b %> = <%=addition %>
+<%=a %> - <%=b %> = <%=m %>
+<%=a %> * <%=b %> = <%=n %>
+<%=a %> / <%=b %> = <%=c%>
+<%=a %> % <%=b %> = <%=d%>
+
+</body>
+</html>

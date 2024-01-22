@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<%
+	request.setCharacterEncoding("utf-8");
+	int num3 =Integer.parseInt(request.getParameter("num1"));              
+	int num4= Integer.parseInt(request.getParameter("num2")); 
+	
+	out.print("첫번째수:"+num3+"<br>");
+	out.print("두번째수:"+num4+"<br>");
+	
+	out.print(num3+"+"+num4+"="+(num3+num4)+"<br>");
+
+%>
+<form action="ExForward_05.jsp" method="get">
+	<input type="submit" value="나눗셈">
+</form>
+
+	
+</body>
+</html>

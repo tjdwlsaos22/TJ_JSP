@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="writefile_02.jsp" method="post">
+	
+	수량 : <input type="text" name="name"><br>
+	크기 :
+			<input type="radio" name="check" value="big" >대
+			<input type="radio" name="check" value="mid" checked="checked">중
+			<input type="radio" name="check" value="sma">소<br>
+			
+	색상:
+			<select name="color">
+				<option value="beige">베이지</option>
+				<option value="brown">브라운</option>
+				<option value="kaki selected="selected">카키</option>
+			</select><br>	
+			
+		
+	</form>
+
+</body>
+</html>

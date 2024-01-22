@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="cart_04.jsp" method="post">
+<input type="submit" value="저장결과 불러오기">
+</form>
+<%
+	String str = request.getParameter("result");
+if(str.equals("success")){
+	out.print("저장되었습니다.");
+	
+}else{
+	out.print("파일 저장 불가");
+}
+
+request.setCharacterEncoding("utf-8");
+String name = request.getParameter("name");
+String title = request.getParameter("check");
+String content=request.getParameter("color");
+
+request.setAttribute("Name", name);
+request.setAttribute("Size", title);
+request.setAttribute("Color", content);
+
+RequestDispatcher dispatcher =  request.getRequestDispatcher("cart_04.jsp");
+dispatcher.forward(request, response);
+
+%>
+</body>
+</html>

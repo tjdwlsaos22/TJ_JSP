@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>List Tag</title>
+	</head>
+	<body>
+		<p>Menu List</p>
+		<ul>
+			<Li>Menu1</Li>
+			<Li>Menu2</Li>
+			<Li>Menu3</Li>
+			<Li>Menu4</Li>
+			<Li>Menu5</Li>
+			<Li>Menu6</Li>
+		</ul>
+		
+		<p>Menu List</p>
+		<ol>
+			<Li>Menu1</Li>
+			<Li>Menu2</Li>
+			<Li>Menu3</Li>
+			<Li>Menu4</Li>
+			<Li>Menu5</Li>
+			<Li>Menu6</Li>
+		</ol>
+		
+		<p>검색 사이트 리스트</p>
+		<ol>
+				<Li><a href="http://www.google.com" target="_blank">Google</a></Li><br>
+				<Li><a href="http://www.naver.com" target="_self">Naver</a></Li><br>
+				<Li><a href="http://www.yahoo.com" target="_parent">Yahoo</a></Li></br>
+				<Li><a href="http://www.nexon.com" target="_top">nexon</a></Li>
+		</ol>
+		
+		<dl>
+			<!-- <dt>Menu List</dt> -->
+				<Li>Menu01</Li>
+				<dd>Menu02</dd>
+				<dd>Menu03</dd>
+				<dd>Menu04</dd>
+		
+		</dl>
+		
+		
+		
+	</body>
+</html>

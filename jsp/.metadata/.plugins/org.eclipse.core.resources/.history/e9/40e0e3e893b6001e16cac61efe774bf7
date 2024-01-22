@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+</head>
+<body>
+<%
+    String result = request.getParameter("result");
+
+    if ("success".equals(result)) {
+%>
+        수량 : <%= request.getAttribute("Name") %><br>
+        크기 : <%= request.getAttribute("Size") %><br>
+        색상 : <%= request.getAttribute("Color") %><br>
+      
+ 
+
+</body>
+</html>

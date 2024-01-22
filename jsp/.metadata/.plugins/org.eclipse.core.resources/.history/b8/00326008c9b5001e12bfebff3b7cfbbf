@@ -1,0 +1,43 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+	String num1,num2;
+	int num3,num4;
+	num1 =request.getParameter("height");
+	num2= request.getParameter("weight");
+	num3=Integer.parseInt(num1);
+	num4=Integer.parseInt(num2);
+	
+	double num5 = num3/100;
+	double result=num4/(num5*num5);
+	String result1;
+	
+	if(result>=18.5){
+		result1="저체중";
+			
+	}else if(result>=23){
+		result1="정상";
+	}else if(result>=25){
+		result1="과체중";
+	}else if(result>=30){
+		result1="비만";
+	}else{
+		result1="고도비만";
+	}
+	
+	out.print("입력한 키는 "+num3+" 이고"+"<br>");
+	out.print("입력한 키는 "+num3+" 이고"+"<br>");
+	out.print("입력한 키는 "+num3+" 이고"+"<br>");
+	out.print("결과는 "+result1+" 입니다.");
+	
+%>
+	
+</body>
+</html>

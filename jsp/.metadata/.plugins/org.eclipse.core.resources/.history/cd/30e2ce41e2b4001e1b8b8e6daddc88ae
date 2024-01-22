@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>List Tag</title>
+	</head>
+	<body>
+		<p>Menu List</p>
+		<ul>
+			<Li>Menu1</Li>
+			<Li>Menu2</Li>
+			<Li>Menu3</Li>
+			<Li>Menu4</Li>
+			<Li>Menu5</Li>
+			<Li>Menu6</Li>
+		</ul>
+		
+		<p>Menu List</p>
+		<ol>
+			<Li>Menu1</Li>
+			<Li>Menu2</Li>
+			<Li>Menu3</Li>
+			<Li>Menu4</Li>
+			<Li>Menu5</Li>
+			<Li>Menu6</Li>
+		
+		
+		</ol>
+		
+		
+		
+	</body>
+</html>

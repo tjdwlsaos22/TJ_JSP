@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 	<meta charset="UTF-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+		<meta charset="UTF-8">
+		<title>Table Tag</title>
+		<style>
+   		 body {
+      	display: flex;
+      	align-items: center;
+      	justify-content: center;
+      	height: 100vh;
+      	margin: 0;
+    	}
+
+    	table {
+      	border-collapse: collapse;
+      	width: 80%; /* 테이블의 너비를 조절할 수 있습니다. */
+    	}
+
+
+  </style>
+	</head>
+	<body>
+		
+		<table border="5">
+			<tr>
+				<th rowspan="3"><font color="yellow">홍길동</font></th>
+				<th>국어</th>
+				<th>영어</th>
+				<th>수학</th>
+			</tr>
+			<tr>
+				<td align="center"><font color="blue">100</font></td>
+				<td align="center"><font color="purple">90</font></td>
+				<td align="center"><font color="red">80</font></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">평균</td>
+				<td>90</td>
+			</tr>
+		</table>
+	</body>
+</html>
