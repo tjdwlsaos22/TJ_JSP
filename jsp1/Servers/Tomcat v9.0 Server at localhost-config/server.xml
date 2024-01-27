@@ -160,7 +160,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="Test" path="/Test" reloadable="true" source="org.eclipse.jst.jee.server:Test"/><Context docBase="Test1" path="/Test1" reloadable="true" source="org.eclipse.jst.jee.server:Test1"/><Context docBase="Character" path="/Character" reloadable="true" source="org.eclipse.jst.jee.server:Character"/><Context docBase="Session" path="/Session" reloadable="true" source="org.eclipse.jst.jee.server:Session"/><Context docBase="sum_01" path="/sum_01" reloadable="true" source="org.eclipse.jst.jee.server:sum_01"/><Context docBase="JSTL" path="/JSTL" reloadable="true" source="org.eclipse.jst.jee.server:JSTL"/><Context docBase="Validaiton" path="/Validaiton" reloadable="true" source="org.eclipse.jst.jee.server:Validaiton"/><Context docBase="CRUD" path="/CRUD" reloadable="true" source="org.eclipse.jst.jee.server:CRUD"/></Host>
+      <Context docBase="SemiProject_01" path="/SemiProject_01" reloadable="true" source="org.eclipse.jst.jee.server:SemiProject_01"/></Host>
     </Engine>
   </Service>
 </Server>

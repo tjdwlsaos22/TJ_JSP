@@ -26,4 +26,32 @@
     <!--
     <Manager pathname="" />
     -->
+    
+    <!--  mvc -->
+    <Resource
+    	name="jdbc/mvc"
+    	auth="Container"
+    	type="javax.sql.DataSource"
+    	maxTotal="8"
+    	maxIdle="30"
+    	maxWaitMillis="-1"
+    	username="root"
+    	password="qwer1234"
+    	driverClassName="com.mysql.cj.jdbc.Driver"
+    	url = "jdbc:mysql://localhost:3306/mvc?serverTimezone=Asia/Seoul&amp;characterEncoding=utf8&amp;useSSL=false"
+    />
+     	  <!-- semiproject_01 -->
+   	 
+   	 <Resource
+    	name="jdbc/semiproject_01"
+    	auth="Container"
+    	type="javax.sql.DataSource"
+    	maxTotal="8"
+    	maxIdle="30"
+    	maxWaitMillis="-1"
+    	username="root"
+    	password="qwer1234"
+    	driverClassName="com.mysql.cj.jdbc.Driver"
+    	url = "jdbc:mysql://localhost:3306/semiproject_01?serverTimezone=Asia/Seoul&amp;characterEncoding=utf8&amp;useSSL=false"
+    />
 </Context>
